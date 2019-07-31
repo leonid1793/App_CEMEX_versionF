@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="My Cuenta">
+        <menu>
+            <item
+                android:id="@+id/nav_home"
+                android:icon="@drawable/ic_login"
+                android:title="Cuenta"/>
+            <item
+                android:id="@+id/nav_gallery"
+                android:icon="@drawable/ic_historial_pedidos"
+                android:title="Historial de Pedidos"/>
+            <item
+                android:id="@+id/nav_slideshow"
+                android:icon="@drawable/ic_preguntas_frecuentes"
+                android:title="Preguntas Frecuentes"/>
+            <item
+                android:id="@+id/nav_tools"
+                android:icon="@drawable/ic_contactar"
+                android:title="Contactar"/>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_metodo_de_pago"
+                android:title="Metodo de Pago"/>
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_logout"
+                android:title="Cerrar Sesion"/>
+
+        </menu>
+    </item>
+
+</menu>

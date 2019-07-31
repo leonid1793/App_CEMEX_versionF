@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Activity_caracter">
+
+    <include layout="@layout/tool"
+        android:id="@+id/tollvar1"/>
+
+    <LinearLayout
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_67sdp"
+        android:layout_gravity="center"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="3dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            android:text="Cemento"
+            android:textColor="@color/colorPrimary" />
+
+        <EditText
+            android:id="@+id/editText7"
+            android:layout_width="@dimen/_12sdp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            android:text="Promociones"
+            android:textColor="@color/colorPrimary" />
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider6"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="499dp"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_83sdp"
+                android:layout_gravity="left"
+                android:background="@drawable/style"
+                tools:srcCompat="@drawable/img_cemento"/>
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_79sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/style"
+                tools:srcCompat="@drawable/img_cemento" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="@dimen/_73sdp"
+                android:layout_height="91dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                tools:srcCompat="@drawable/img_cemento" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_83sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                tools:srcCompat="@drawable/img_cemento" />
+
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider4"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_weight="1"
+            android:background="?android:attr/listDivider" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/_40sdp"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="247dp"
+                android:layout_height="123dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/img2" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="@dimen/_189sdp"
+                android:layout_height="37dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:text="Cemento Cemex Peso 30KG"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="61dp"
+                android:text="Descripcion del Producto" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="51dp"
+                android:text="Precio Unitario  S/ 24.00"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="94dp"
+                android:layout_height="40dp"
+                android:text="Cantidad:"
+                android:textColor="@color/colorPrimary" />
+
+            <LinearLayout
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_5sdp">
+
+                <RelativeLayout
+                    android:layout_width="111dp"
+                    android:layout_height="42dp"
+                    android:background="@drawable/style"
+                    android:gravity="center_horizontal">
+
+                    <Button
+                        android:id="@+id/button1"
+                        android:layout_width="31dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginTop="0dp"
+                        android:background="@drawable/style"
+                        android:text="-" />
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="50dp"
+                        android:layout_height="fill_parent"
+                        android:layout_alignBottom="@+id/button1"
+                        android:layout_toRightOf="@+id/button1"
+                        android:gravity="center"
+                        android:text="0"/>
+
+                    <Button
+                        android:id="@+id/button2"
+                        android:layout_width="48dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/style"
+                        android:layout_toRightOf="@+id/textView1"
+                        android:text="+"/>
+                    <View
+                        android:id="@+id/divider"
+                        android:layout_width="1dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="50dp"
+                        android:backgroundTint="@color/colorPrimaryDark"
+                        android:background="?android:attr/listDivider"
+                        />
+                    <View
+                        android:id="@+id/divider2"
+                        android:layout_width="1dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="96dp"
+                        android:backgroundTint="@color/colorPrimaryDark"
+                        android:background="?android:attr/listDivider"
+                        />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="231dp"
+                android:layout_height="69dp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/style"
+                android:textStyle="normal"
+                android:text="AGREGAR AL CARRITO"
+                android:textColor="@color/colorPrimary" />
+
+
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="421dp"
+        android:layout_height="141dp"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="421dp"
+            android:layout_height="91dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:background="@drawable/contorno"
+            android:gravity="center"
+            android:text="Ir Al Carrito de Compra"
+            android:textColor="@color/colorwhite" />
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="@dimen/_25sdp"
+    android:layout_marginEnd="@dimen/_25sdp"
+    tools:context=".MainRegistroActivity">
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="247dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_20sdp"
+        app:srcCompat="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:drawableLeft="@drawable/ic_dni"
+        android:hint="DNI/RUC"
+        android:inputType="number" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:inputType="textPersonName"
+        android:hint="Nombre completo"
+        android:id="@+id/editText5"
+        android:drawableLeft="@drawable/ic_login"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:inputType="number"
+        android:hint="Numero de Celular"
+        android:drawableLeft="@drawable/ic_celular"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:inputType="textPersonName"
+        android:hint="Correo"
+        android:drawableLeft="@drawable/ic_correo"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:inputType="textWebPassword"
+        android:hint="Contraseña"
+        android:drawableLeft="@drawable/ic_contrasena"/>
+
+    <CheckBox
+        android:text="Terminos de Condiciones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/checkBox2"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/_8sdp"/>
+
+    <Button
+        android:text="Crear Cuenta"
+        android:background="@drawable/button_style"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_55sdp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:id="@+id/button_crear"
+        android:textColor="@android:color/background_light"/>
+
+
+    </LinearLayout>
+
+
+</ScrollView>
