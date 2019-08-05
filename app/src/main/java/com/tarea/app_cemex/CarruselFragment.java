@@ -2,7 +2,6 @@ package com.tarea.app_cemex;
 
 
 import android.os.Bundle;
-import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -55,7 +54,7 @@ public class CarruselFragment extends Fragment {
 
 
 
-        CarouselView carouselView = view.findViewById(R.id.carrousel);
+        CarouselView carouselView = view.findViewById(R.id.imagenes_carrusel);
         carouselView.setPageCount(mInts.length);
         carouselView.setImageListener(new ImageListener() {
             @Override

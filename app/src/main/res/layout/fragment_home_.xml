@@ -1,19 +1,234 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Home_Fragment">
+    tools:context=".CarrouseFragment"
+    >
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/fondo_gris"
+        android:weightSum="10"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <!-- TODO: Update blank fragment layout -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="135dp"
+            android:background="@drawable/fondo_gris"
+            android:orientation="vertical"
+            android:weightSum="10">
+
+            <com.synnapps.carouselview.CarouselView
+                android:id="@+id/imagenes_carrusel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorwhite"
+                app:disableAutoPlayOnUserInteraction="true"
+                app:fillColor="#FFFFFFFF"
+                app:pageColor="#00000000"
+                app:radius="6dp"
+                app:strokeColor="#FF777777">
+
+            </com.synnapps.carouselview.CarouselView>
+
+        </RelativeLayout>
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <GridLayout
+                android:id="@+id/mainGrid"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_519sdp"
+                android:layout_alignParentStart="true"
+                android:layout_weight="8"
+                android:alignmentMode="alignMargins"
+                android:columnCount="1"
+                android:columnOrderPreserved="false"
+                android:padding="14dp"
+                android:rowCount="3">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="363dp"
+                    android:layout_height="198dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    app:cardCornerRadius="18dp"
+                    app:cardElevation="8dp">
 
 
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="@dimen/_150sdp"
-        android:layout_height="@dimen/_150sdp"
-        android:layout_gravity="center"
-        android:src="@color/darkgray" />
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="220dp"
+                        app:srcCompat="@drawable/img_cemento" />
 
-</FrameLayout>
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="169dp"
+                        android:layout_height="34dp"
+                        android:layout_gravity="top|left"
+                        android:layout_marginLeft="@dimen/_125sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="Quisquella Uso General"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="224dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="@dimen/_100sdp"
+                        android:layout_marginTop="@dimen/_50sdp"
+                        android:text="Cenmento sin mas fgdhjkgnfhjsdnfh
+dfhdfhdfshfdhssdfhdfhdfhdsfhsdfhdfhdfh
+dfhsdhdfhsdfhsdf" />
+
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="363dp"
+                    android:layout_height="198dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    app:cardCornerRadius="18dp"
+                    app:cardElevation="8dp">
+
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="220dp"
+                        app:srcCompat="@drawable/img_cemento" />
+
+                    <TextView
+                        android:id="@+id/textView3.1"
+                        android:layout_width="169dp"
+                        android:layout_height="34dp"
+                        android:layout_gravity="top|left"
+                        android:layout_marginLeft="@dimen/_125sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="Quisquella Uso General"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView3.2"
+                        android:layout_width="224dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="@dimen/_100sdp"
+                        android:layout_marginTop="@dimen/_50sdp"
+                        android:text="Cenmento sin mas fgdhjkgnfhjsdnfh
+dfhdfhdfshfdhssdfhdfhdfhdsfhsdfhdfhdfh
+dfhsdhdfhsdfhsdf" />
+
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="363dp"
+                    android:layout_height="198dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    app:cardCornerRadius="18dp"
+                    app:cardElevation="8dp">
+
+
+                    <ImageView
+                        android:id="@+id/imageView4.1"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="220dp"
+                        app:srcCompat="@drawable/img_cemento" />
+
+                    <TextView
+                        android:id="@+id/textView4.2"
+                        android:layout_width="169dp"
+                        android:layout_height="34dp"
+                        android:layout_gravity="top|left"
+                        android:layout_marginLeft="@dimen/_125sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="Quisquella Uso General"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView4.3"
+                        android:layout_width="224dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="@dimen/_100sdp"
+                        android:layout_marginTop="@dimen/_50sdp"
+                        android:text="Cenmento sin mas fgdhjkgnfhjsdnfh
+dfhdfhdfshfdhssdfhdfhdfhdsfhsdfhdfhdfh
+dfhsdhdfhsdfhsdf" />
+
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="363dp"
+                    android:layout_height="198dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    app:cardCornerRadius="18dp"
+                    app:cardElevation="8dp">
+
+
+                    <ImageView
+                        android:id="@+id/imageView11"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="220dp"
+                        app:srcCompat="@drawable/img_cemento" />
+
+                    <TextView
+                        android:id="@+id/textView124"
+                        android:layout_width="169dp"
+                        android:layout_height="34dp"
+                        android:layout_gravity="top|left"
+                        android:layout_marginLeft="@dimen/_125sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="Quisquella Uso General"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView123"
+                        android:layout_width="224dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="@dimen/_100sdp"
+                        android:layout_marginTop="@dimen/_50sdp"
+                        android:text="Cenmento sin mas fgdhjkgnfhjsdnfh
+dfhdfhdfshfdhssdfhdfhdfhdsfhsdfhdfhdfh
+dfhsdhdfhsdfhsdf" />
+
+
+                </android.support.v7.widget.CardView>
+
+            </GridLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_60sdp">
+
+            <android.support.design.widget.BottomNavigationView
+                android:id="@+id/nav_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorwhite"
+                app:menu="@menu/bottom_nav_menu" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
