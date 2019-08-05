@@ -7,23 +7,23 @@
     tools:context="edmt.dev.androidgridlayout.MainActivity">
 
 
+    <include
+        android:id="@+id/tollvar1"
+        layout="@layout/tool" />
 
-        <include layout="@layout/tool"
-            android:id="@+id/tollvar1"/>
-
-        <FrameLayout
-            android:id="@+id/flContainerMain"
-            android:layout_below="@+id/tollvar1"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+    <FrameLayout
+        android:id="@+id/flContainerMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tollvar1" />
 
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/buttonbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colorwhite"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="0dp"
+        android:background="@color/colorwhite"
         app:menu="@menu/bottom_nav_menu" />
 
 

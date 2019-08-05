@@ -1,6 +1,8 @@
 package com.tarea.app_cemex;
 
 import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.design.widget.BottomNavigationView;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
@@ -49,7 +51,38 @@ public class MainNadBar extends AppCompatActivity
 
         CarruselFragment fragment = new CarruselFragment ();
         displaySelectedFragment(fragment,"");
+
+        //BottonNavegation
+        BottomNavigationView bottomNavigationView = findViewById(R.id.buttonbar);
+        final Home_Fragment home_fragment = new Home_Fragment();
+        final Favorite_Fragment favorite_fragment = new Favorite_Fragment();
+        final Fragment_CallCenter fragment_callCenter = new Fragment_CallCenter();
+        final Fragment_Promocion fragment_promocion = new Fragment_Promocion();
+
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+         @Override
+             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+                 int id= menuItem.getItemId();
+                 if (id== R.id.navigation_home){
+                     setFragment(home_fragment);
+                     return true;
+                 }else if (id==R.id.navigation_favorite){
+                     setFragment(favorite_fragment);
+                     return true;
+                 }else if (id==R.id.navigation_callcenter){
+                     setFragment(fragment_callCenter);
+                     return true;
+                 }else if (id==R.id.navigation_promociones){
+                     setFragment(fragment_promocion);
+                     return true;
+                 }
+                 return false;
+             }
+         });
+
+        bottomNavigationView.setSelectedItemId(R.id.navigation_home);
     }
+
 
     @Override
     public void onBackPressed() {
@@ -132,7 +165,11 @@ public class MainNadBar extends AppCompatActivity
             }
         });
         setSupportActionBar(toolbar);
+    }
 
-
+    private  void  setFragment(Fragment fragment){
+        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+        fragmentTransaction.replace(R.id.flContainerMain,fragment);
+        fragmentTransaction.commit();
     }
 }
