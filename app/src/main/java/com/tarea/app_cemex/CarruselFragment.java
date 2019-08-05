@@ -40,11 +40,20 @@ public class CarruselFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
+
+
+
         // Inflate the layout for this fragment
          View view = inflater.inflate(R.layout.fragment_carrusel, container, false);
 
 
+
+
+
         //Carrolusel
+
+
 
         CarouselView carouselView = view.findViewById(R.id.carrousel);
         carouselView.setPageCount(mInts.length);
@@ -72,6 +81,7 @@ public class CarruselFragment extends Fragment {
 
 
     }
+
     }
 
 
